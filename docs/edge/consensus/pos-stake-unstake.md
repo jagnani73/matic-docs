@@ -113,7 +113,7 @@ address `0x0000000000000000000000000000000000001001`.
 Any kind of interaction with the staking mechanism is done through the Staking Smart Contract at the specified address.
 
 To learn more about the Staking Smart Contract, please visit
-the [Staking Smart Contract](/docs/edge/consensus/pos-concepts#contract-pre-deployment)
+the **[Staking Smart Contract](/docs/edge/consensus/pos-concepts#contract-pre-deployment)**
 section.
 :::
 

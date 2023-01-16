@@ -501,7 +501,7 @@ Sets the path to the SecretsManager config file. Used for Hashicorp Vault, AWS S
   </TabItem>
 </Tabs>
 
-Sets the client to dev mode. Default: `false`.
+Sets the client to dev mode. Default: `false`. In dev mode peers discovery is disabled by default.
 
 ---
 
