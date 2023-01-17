@@ -1051,7 +1051,7 @@ module.exports = {
     "zkEVM/lx-ly-bridge",
     {
       type: "category",
-      label: "Start Building",
+      label: "How To Guides",
       link: {
         type: "generated-index"
       },
