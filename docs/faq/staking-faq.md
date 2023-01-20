@@ -128,7 +128,7 @@ Once the **unbonding period is complete**, the Claim Stake button will be enable
 Please watch the video for a graphical illustration of how this works:
 
 <video width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/ClaimingStake.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/claimingStake.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
