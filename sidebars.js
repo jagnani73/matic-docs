@@ -1096,7 +1096,7 @@ module.exports = {
     "faq/technical-faqs",
     // "faq/delegator-faq",
     "faq/commit-chain-multisigs",
-    "maintain/delegate/delegator-faq",
+    //"maintain/delegate/delegator-faq",
     "maintain/validate/faq/validator-faq",
     "faq/staking-faq",
     "faq/wallet-bridge-faq",
