@@ -382,3 +382,97 @@ These logs throw up when there is no enough ETH in your signer wallet.
 
 **Solution:**
 It is recommended to have 1 ETH in your signer wallet but can keep .5 to .75 in case you check it often enough.
+
+26. Heimdall:  No staking sequence exists: %s %s             module=staking
+
+
+If the following logs are found on a large frequency on Heimdall then this issue is related to the bridge service resetting the bridge directory fixes this issue.
+
+```bash
+sudo service rabbitmq-server stop
+mv /var/lib/rabbitmq/mnesia /var/lib/rabbitmq/mnesia-old
+sudo service rabbitmq-server start
+```
+
+27. Retrying again in 5 seconds to fetch data from Heimdall path=bor/span/1
+
+These logs in Bor mean that it cannot connect to Heimdall. 
+
+The Heimdall doesn’t look in sync and hence it won’t have data on all the things that Bor would require. 
+
+So the recommended procedure would be to clear the historical data of both Heimdall and Bor and resync from the snapshot.
+
+Ensure the following is fine:
+
+1. Heimdall logs are normal or is it throwing up any errors?
+
+2. Ensure Heimdall is fully synced `curl localhost:26657/status`.
+
+3. Also ensure whether Heimdall is connected with the other peers.
+
+```bash
+curl localhost:26657/net_info? | jq .result.n_peers
+```
+
+If there aren’t any peers, check whether the seeds or persistent peers are rightly set on Heimdall and ensure port 26656 is all open.
+
+**Heimdall**
+
+**Reset Heimdall**
+
+```bash
+sudo service heimdalld stop
+heimdalld unsafe-reset-all
+```
+
+**Sync Heimdall from Snapshot**
+
+```bash
+wget -c <Snapshot URL>
+tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
+```
+
+28. etherbase missing: etherbase must be explicitly specified
+
+To fix this issue the signer address that is used to mine must be added in the miner.etherbase section on config.toml file
+
+
+
+29. Steps to Prune the node
+
+Please use the below steps:
+
+1. Check your bor data size before pruning
+
+```bash
+du -sh /usr/bin/bor
+```
+
+2. Stop bor
+
+```bash
+sudo service bor stop
+```
+
+3. Start tmux to ensure that even if your SSH connection is reset, the process is running on the remote machine
+tmux.
+
+4. Start pruning
+
+```bash
+sudo bor snapshot prune-state --datadir  /usr/bin/bor
+```
+
+The default --datadir is  `/usr/bin/bor`.
+
+5.Once the pruning is completed, you will see success logs and details. Then start Bor again:
+
+```bash
+sudo service bor start
+```
+
+6. Check your Bor data size after pruning:
+
+```bash
+du -sh  /usr/bin/bor
+```
