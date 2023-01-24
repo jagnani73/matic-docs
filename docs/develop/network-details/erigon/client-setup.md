@@ -77,9 +77,9 @@ erigon --chain=mumbai
     erigon --chain=mumbai --bor.heimdall=<your heimdall url> --datadir=<your_data_dir>
     ```
     
-    - If you want to connect to Polygon Mumbai Testnet use: [https://heimdall.api.matic.today](https://heimdall.api.matic.today/)
+    - If you want to connect to Polygon Mumbai Testnet use: [https://heimdall-api-testnet.polygon.technology](https://heimdall-api-testnet.polygon.technology)
     
-    - For Polygon Mainnet: [https://heimdall.api.matic.network](https://tendermint.api.matic.network/)
+    - For Polygon Mainnet: [https://heimdall-api.polygon.technology](https://heimdall-api.polygon.technology)
 
 ### Tips for Faster Sync
 

@@ -38,7 +38,7 @@ Check if you have funds on the Main Ethereum Network, to delegate your tokens. A
 
 ### I am unable to view the Staking tab. How do I access Staking?
 
-Once logged into https://wallet.polygon.technology/ you need to  click on apps > staking. Users will be landed on the staking overview page. Reference for guide:
+Once logged into https://staking.polygon.technology/ you need to  click on apps > staking. Users will be landed on the staking overview page. Reference for guide:
 
 <img src={useBaseUrl("img/staking_faq/staking-app.png")} height="500px"/>
 

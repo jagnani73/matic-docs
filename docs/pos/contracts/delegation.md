@@ -1,17 +1,16 @@
 ---
 id: delegation
 title: Delegation via Validator Shares
+sidebar_label: Delegation
 description: Delegation via Validator Shares
 keywords:
+  - polygon wiki
   - docs
-  - matic
   - polygon
   - delegation
   - validator shares
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-
-# Delegation via Validator Shares
 
 Polygon supports delegation via validator shares. By using this design, it is easier to distribute rewards and slash with scale (thousands of delegators) on Ethereum contracts without much computation.
 
@@ -21,7 +20,7 @@ Note that `MATIC` is a staking token. A delegator needs to have `MATIC` tokens t
 
 Initially, a delegator `D` buys tokens from validator `A` specific pool when `1 MATIC per 1 VATIC`.
 
-When a validator gets rewarded with more `MATIC` tokens, new tokens are added to the pool. Let's say with the current pool of `100 MATIC` tokens,  `10 MATIC` rewards are added to the pool. But since the total supply of `VATIC` tokens didn't change due to rewards, the exchange rate becomes `1 MATIC per 0.9 VATIC`. Now, delegator `D` gets more `MATIC` for the same shares.
+When a validator gets rewarded with more `MATIC` tokens, new tokens are added to the pool. Let's say with the current pool of `100 MATIC` tokens, `10 MATIC` rewards are added to the pool. But since the total supply of `VATIC` tokens didn't change due to rewards, the exchange rate becomes `1 MATIC per 0.9 VATIC`. Now, delegator `D` gets more `MATIC` for the same shares.
 
 `VATIC`: Validator specific minted validator share tokens (ERC20 tokens)
 
@@ -43,6 +42,8 @@ Exchange rate is calculated as below:
 ```js
 ExchangeRate = (totalDelegatedPower + delegatorRewardPool) / totalDelegatorShares
 ```
+
+## Methods and Variables
 
 ### buyVoucher
 
@@ -116,6 +117,4 @@ function updateRewards(uint256 reward, uint256 checkpointStakePower, uint256 val
         returns (uint256)
 ```
 
-When a validator gets rewards for submitting checkpoint, this function is called for disbursements of rewards between validator and delegators. For more details, here is a video explaining the whole mechanism in details:
-
-[![create liquid staking assets - video](https://img.youtube.com/vi/8nODLU9C3mw/0.jpg)](https://www.youtube.com/watch?v=8nODLU9C3mw)
+When a validator gets rewards for submitting checkpoint, this function is called for disbursements of rewards between validator and delegators.
