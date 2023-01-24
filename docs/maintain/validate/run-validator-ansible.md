@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync.
 This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/docs/develop/network-details/snapshot-instructions-heimdall-bor).
 
-For snapshot download links, see [<ins>Polygon Chains Snapshots</ins>](https://snapshots.matic.today/).
+For snapshot download links, see [<ins>Polygon Chains Snapshots</ins>](https://snapshot.polygon.technology/).
 :::
 
 This section guides you through starting and running the validator node through an Ansible playbook.
@@ -300,7 +300,7 @@ The Heimdall service takes several days to fully sync from scratch.
 
 Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.polygon.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
 
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
+For snapshot download links, see [Polygon Chains Snapshots](https://snapshot.polygon.technology/).
 
 :::
 

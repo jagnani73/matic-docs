@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours.
 For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.polygon.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
 
-For snapshot download links, see [<ins>Polygon Chains Snapshots</ins>](https://snapshots.matic.today/).
+For snapshot download links, see [<ins>Polygon Chains Snapshots</ins>](https://snapshot.polygon.technology/).
 
 :::
 
@@ -394,7 +394,7 @@ As mentioned earlier, the Heimdall service takes several days to sync from scrat
 Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours.
 For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.polygon.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
 
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
+For snapshot download links, see [Polygon Chains Snapshots](https://snapshot.polygon.technology/).
 
 :::
 
