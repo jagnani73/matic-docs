@@ -70,7 +70,7 @@ You can quickly check a validator's health status, whether it is **Healthy**, on
 The Public Notices page shows the recent notices and messages sent to the community of validators.
 
 <div align="center">
-  <img src={useBaseUrl("img/validator-performance/public-notices.png")}  width="800" />
+  <img src={useBaseUrl("img/validator-performance/public-notices.png")}  width="1000" />
 </div>
 <br></br>
 

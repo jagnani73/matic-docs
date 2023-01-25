@@ -53,7 +53,7 @@ Tokens on testnet networks have no value as they are only used for testing purpo
 
 :::caution
 
-If you don't have enough MATIC Testnet tokens in your account to pay for the gas fees, the transaction may fail. If you require testnet tokens in bulk, please contact us on the <ins>**[Polygon Discord server](https://discord.com/invite/0xPolygon)**</ins>.
+If you don't have enough MATIC Testnet tokens in your account to pay for the gas fees, the transaction may fail. If you require testnet tokens in bulk, please fill <ins>**[this form](https://docs.google.com/forms/d/e/1FAIpQLSe4npoGldJknEs9EBtPaV3AS-0HTso2IuMWDCiMmLEMCx8euQ/viewform)**</ins>.
 
 :::
 
