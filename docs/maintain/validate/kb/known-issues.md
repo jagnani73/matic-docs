@@ -406,7 +406,7 @@ Ensure the following is fine:
 
 1. Heimdall logs are normal or is it throwing up any errors?
 
-2. Ensure Heimdall is fully synced `curl localhost:26657/status`.
+2. Ensure Heimdall is fully synced by running: ```curl localhost:26657/status```
 
 3. Also ensure whether Heimdall is connected with the other peers.
 
@@ -414,9 +414,8 @@ Ensure the following is fine:
 curl localhost:26657/net_info? | jq .result.n_peers
 ```
 
-If there aren’t any peers, check whether the seeds or persistent peers are rightly set on Heimdall and ensure port 26656 is all open.
+If there aren’t any peers, check whether the **seeds or persistent peers are rightly set on Heimdall** and **ensure Port 26656 is all open**.
 
-**Heimdall**
 
 **Reset Heimdall**
 
@@ -434,7 +433,7 @@ tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
 
 28. etherbase missing: etherbase must be explicitly specified
 
-To fix this issue the signer address that is used to mine must be added in the miner.etherbase section on config.toml file
+To fix this issue, the signer address that is used to mine must be added inside `miner.etherbase` section in the `config.toml` file
 
 
 
@@ -442,19 +441,19 @@ To fix this issue the signer address that is used to mine must be added in the m
 
 Please use the below steps:
 
-1. Check your bor data size before pruning
+1. Check your Bor data size before pruning
 
 ```bash
 du -sh /usr/bin/bor
 ```
 
-2. Stop bor
+2. Stop Bor
 
 ```bash
 sudo service bor stop
 ```
 
-3. Start tmux to ensure that even if your SSH connection is reset, the process is running on the remote machine
+3. Start **tmux** to ensure that even if your SSH connection is reset, the process is running on the remote machine
 tmux.
 
 4. Start pruning
@@ -463,9 +462,9 @@ tmux.
 sudo bor snapshot prune-state --datadir  /usr/bin/bor
 ```
 
-The default --datadir is  `/usr/bin/bor`.
+The default --datadir is `/usr/bin/bor`.
 
-5.Once the pruning is completed, you will see success logs and details. Then start Bor again:
+5. Once the pruning is completed, you will see success logs and details. Then start Bor again:
 
 ```bash
 sudo service bor start
